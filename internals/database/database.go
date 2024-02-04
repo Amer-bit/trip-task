@@ -61,11 +61,8 @@ func CreateTrip(dto types.Trip) (types.Trip, error) {
 func ListTrips(dto types.ListTripsParamsDto) ([]types.Trip, error) {
 	db := connect()
 
-	// Create the Expression to fill the input struct with.
-	// Get all movies in that year; we'll pull out those with a higher rating later
 	filters := expression.Name("Status").Equal(expression.Value(dto.Status))
 
-	// Get back the title, year, and rating
 	proj := expression.NamesList(
 		expression.Name("Origin"),
 		expression.Name("Destination"),
