@@ -39,7 +39,7 @@ func GetTripInfo(dto types.Location) (types.MatrixElement, error) {
 		fmt.Println("Error making the request:", err)
 		return types.MatrixElement{}, err
 	}
-	// defer response.Body.Close()
+	defer response.Body.Close()
 	// Read the response body
 	body, err := io.ReadAll(response.Body)
 	if err != nil {
