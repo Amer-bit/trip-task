@@ -15,7 +15,7 @@ import (
 // APP LEVEL HANDLERS //
 func ErrorHandler(ctx *gin.Context) {
 	ctx.Next()
-	if ctx.Errors != nil {
+	if ctx.Errors.Errors() != nil {
 		ctx.JSON(-1, ctx.Errors.Errors())
 	}
 
