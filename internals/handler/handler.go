@@ -16,7 +16,7 @@ import (
 func ErrorHandler(ctx *gin.Context) {
 	ctx.Next()
 	if ctx.Errors.Errors() != nil {
-		ctx.IndentedJSON(-1, ctx.Errors.Errors())
+		ctx.JSON(-1, ctx.Errors.Errors())
 	}
 
 }
