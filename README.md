@@ -8,7 +8,12 @@ go build
 
 ### API's
 - POST /trip
-- GET /trip/price?origin=&destination
+    - Body:
+        - locationForm: coordinate | long-lat, "required"
+        - origin: string, "required"
+        - destination:  string, "required"
+
+- GET /trip/price?origin=''&destination=''
 - GET /trip/status/:status
     - status : pending | completed
 
