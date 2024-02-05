@@ -6,7 +6,7 @@ go run .
 ### build command
 go build
 
-# API's
+### API's
 - POST /trip
 - GET /trip/price?origin=&destination
 - GET /trip/status/:status
