@@ -1,17 +1,18 @@
 # Trip Task
 
-### debug command
+### Development command
+go mod tidy
 go run .
 
-### build command
+### Build command
 go build
 
 ### API's
 - POST /trip
     - Body:
-        - locationForm: coordinate | long-lat, "required"
-        - origin: string, "required"
-        - destination:  string, "required"
+        - locationForm: coordinate | long-lat, "required", Example: "coordinate"
+        - origin: string, "required", "Husban & Um al Basateen, Amman"
+        - destination:  string, "required", "32.3949968, 35.9043093"
 
 - GET /trip/price?origin=''&destination=''
 - GET /trip/status/:status
