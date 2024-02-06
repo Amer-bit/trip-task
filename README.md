@@ -11,8 +11,8 @@ go build
 - POST /trip
     - Body:
         - locationForm: coordinate | long-lat, "required", Example: "coordinate"
-        - origin: string, "required", "Husban & Um al Basateen, Amman"
-        - destination:  string, "required", "32.3949968, 35.9043093"
+        - origin: string, "required", Example: "Husban & Um al Basateen, Amman"
+        - destination:  string, "required", Example: "32.3949968, 35.9043093"
 
 - GET /trip/price?origin=''&destination=''
 - GET /trip/status/:status
