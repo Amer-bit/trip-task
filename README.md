@@ -20,4 +20,3 @@ go build
 
 
 # Deployed Domain
-**http://ec2-18-216-110-251.us-east-2.compute.amazonaws.com:8080**
